@@ -5,7 +5,7 @@ int main()
 {
     char s[1000];
     scanf("%s", s);
-    printf("%d\n",longest_valid(s));
+    printf("Output: %d\n",longest_valid(s));
     return 0;
 }
 
@@ -15,7 +15,6 @@ int longest_valid(const char* s)
     int right = 0; // open (
     int max_len = 0; // max valid lenght
     int n = strlen(s);
-
     //left to right
     for (int i =0; i< n; i++)
     {
@@ -34,7 +33,6 @@ int longest_valid(const char* s)
             right = 0;
         }
     }
-
     // right to left
     left = 0;
     right = 0;
