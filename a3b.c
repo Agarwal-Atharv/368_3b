@@ -11,8 +11,8 @@ int main()
 
 int longest_valid(const char* s)
 {
-    int left = 0; // close )
-    int right = 0; // open (
+    int left = 0; // open (
+    int right = 0; // close )
     int max_len = 0; // max valid lenght
     int n = strlen(s);
     //left to right
